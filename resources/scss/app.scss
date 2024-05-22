@@ -11,5 +11,21 @@ main {
 
             }
         }
+
+        tbody {
+            & :nth-child(odd) {
+                td {
+                    background-color: $yellow-300;
+                    color: $gray-700;
+                }
+            }
+
+            & :nth-child(even) {
+                td {
+                    background-color: $gray-700;
+                    color: $yellow-300;
+                }
+            }
+        }
     }
 }

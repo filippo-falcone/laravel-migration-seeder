@@ -17,8 +17,8 @@
                     <th scope="col">Info</th>
                 </tr>
             </thead>
-            @foreach ($trains as $train)
-                <tbody>
+            <tbody>
+                @foreach ($trains as $train)
                     <tr>
                         <td>{{$train->operator}}</td>
                         <td>{{$train->train_code}}</td>
@@ -35,8 +35,8 @@
                             <td>In ritardo</td>
                         @endif
                     </tr>
-                </tbody>
-            @endforeach
+                @endforeach
+            </tbody>
         </table>
     </div>
 @endsection
